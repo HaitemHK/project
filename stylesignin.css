@@ -1,0 +1,124 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+nav{
+    color: white;
+    background-color: #365486;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100px;
+}
+img{
+    height: 50px;
+}
+.toptab{
+    display: flex;
+    flex-direction: row;
+}
+.client{
+    padding-top: 0px;
+    height: 30px;
+    width: 30px;
+}
+.drt{
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bottomtab{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+}
+.mid{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;  
+    
+}
+
+.mid>div>a{
+    
+    padding-right: 15px;
+    text-decoration: none;
+    color: white;
+}
+.btn{
+    border: solid 1px;
+    border-radius:13px;
+    border-color:white ;
+    color: white;
+}
+
+.gch{
+    display: flex;
+    align-items: center;
+    padding-right:2% ;
+}
+main{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 190px;
+    height: 500px;
+    width: 700px;
+    margin-left: 650px;
+    border: solid ;
+    border-radius: 10px;
+}
+.disp{
+    font-size: 50px;
+}
+.title{
+    
+    color: white;
+    background-color: #0F1035 ;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25%;
+    width: 30% ;
+    height: 100%;
+    font-size: 60px;
+
+}
+.info{
+    color: white;
+    background-color: #365486;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    
+}
+form{
+    width: 80%;
+    margin-left: 10%;
+}
+a{
+    justify-content: center;
+
+}
+a:hover{
+   color: rebeccapurple;
+}
+#button{
+    color: white;
+    width: 20%;
+    margin-right: 10px;
+}
+#button:hover{  
+    transform: scale(1.2);
+    transition-delay: 3s;
+}
+
+
