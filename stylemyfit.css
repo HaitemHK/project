@@ -114,5 +114,22 @@ footer{
 }
 .article4{
     background-color: #7FC7D9;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+}
+.article5{
+    background-color: #7FC7D9;
+    margin-bottom: 10%;
+}
+.subarticle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.subarticle>img{
+    height: 300px;
+    border: white double 30px;
+    padding: 20px;
+    
 }
