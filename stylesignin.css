@@ -21,7 +21,7 @@ nav{
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 15%;
+    height: 10%;
     width: 100%;
 }
 img{
@@ -119,6 +119,24 @@ a:hover{
     margin-right: 30px;
 }
 #button:hover {  
-    transform: scale(1.2);
+    animation-name: timing;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.mid>ul>li:hover{
+    text-decoration: underline;
 }
 
+#mail:focus,#pswd:focus{
+    animation-name: timing;
+    animation-duration: 0.3s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+}
+@keyframes timing{
+    100%{transform: scale(1.2)}
+}
