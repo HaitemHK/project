@@ -47,27 +47,37 @@ nav{
 }
 .mid{
     width: 40%;
-    padding-top: 30px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     justify-content: center;
+    list-style: none;
 }
-.mid>ul{
-    gap: 10%;
-    padding-top: 1%;
-    width: inherit;
-   
+.mid li{
+    width: 100%;
+    padding-top: 20px;
+    color: white;
+    
 }
-.mid>ul>li>a{
+.mid a{
     text-decoration: none;
     color: white;
 }
+
 .gch{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
     list-style: none;
+    width: 15%;
+    gap: 15%;
 }
 .gch a{
     text-decoration:none ;
     color: white;
+}
+svg{
+    fill: white;
 }
 
 .container{
@@ -115,17 +125,13 @@ form{
     width: 80%;
     margin-left: 10%;
 }
-a{
-    justify-content: center;
-
-}
-a:hover{
+.container a:hover{
    color: rebeccapurple;
 }
 #button{
     color: white;
     width: 20%;
-    margin-right: 30px;
+    font-size: 15px;
 }
 #button:hover {  
     animation-name: timing;
@@ -167,8 +173,67 @@ a:hover{
 @keyframes timing{
     100%{transform: scale(1.2)}
 }
-@media screen and (max-width:750px) {
-    .gch,.mid{
+
+.side ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.side li{
+    width: 100%;
+    height: 50px;
+    list-style: none;
+}
+.side a {
+    width: 100%;
+    height: 100%;
+    padding: 0 , 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.side li:hover{
+    background-color: #416fbe;
+}
+.side{
+    background-color: #3653869f;
+    color: white;
+    position:fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+@media screen and (max-width:730px) {
+    .mid{
         display: none;
     }
+    .gch li:first-of-type{
+        display: none;
+    }
+    .gch li:nth-child(2){
+        display: none;
+    }
+    .btnlayout{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    #button{
+        margin-bottom: 5%;
+    }
+}
+@media (min-width:731px) {
+    .gch li:last-of-type{
+        display: none;
+    }
+    
 }
