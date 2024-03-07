@@ -185,7 +185,6 @@ footer{
         justify-content: flex-start;
         margin-left: 5%;
     }
-
 }
 @media (min-width:731px) {
     .gch li:last-of-type{
