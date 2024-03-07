@@ -10,6 +10,21 @@
 </head>
 <body style="background-color:#7FC7D9">
     <nav class="bg-gradient">
+        <ul class="side bg-gradient">
+          <li onclick="hideSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></li>
+            <li class="nav-item">
+              <a aria-current="page" href="Myfitness.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" style="text-decoration: none; color: white;">Forum</a>
+            </li>
+            <li><a href="signinpage.html">Log In</a></li>
+            <li><a href="signupform.html">Sign Up</a></li>
+          </ul>
+
         <div class="drt">
             <div class="toptab">
               <div><img src="assets/acrobateleft.png" alt=""></div>
@@ -18,79 +33,78 @@
             </div>
         </div>
         <div class="mid">
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                  <a aria-current="page" href="Myfitness.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <div>
-                    <a href="#" style="text-decoration: none; color: white;">Forum</a>
-                    <img src="assets/exit.png" alt="" style="height: 20px;">
-                  </div>
-                </li>
-              </ul>
+          <ul>
+              <li class="nav-item">
+                <a aria-current="page" href="Myfitness.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <div>
+                  <a href="#" style="text-decoration: none; color: white;">Forum</a>
+                  <img src="assets/exit.png" alt="" style="height: 20px;">
+                </div>
+              </li>
+            </ul>
         </div>
-        <div class="gch">
-          <a class="btn" href="signinpage.html">Log In</a>
-          <a href="signupform.html" class="btn">Sign Up</a>
-        </div>
+        <ul class="gch">
+          <li><a href="signinpage.html">Log In</a></li>
+          <li><a href="signupform.html">Sign Up</a></li> 
+          <li onclick="showSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </li>
+        </ul>
     </nav>
     <main>
 
       <div class="article1">
         <div class="subarticle">
-          <div style="width: 40%;">
-            <p><h3><strong>Introducing MyFitness - Your Personal Wellness Companion!</strong></h3>
+          <div>
+            <h3><strong>Introducing MyFitness - Your Personal Wellness Companion!</strong></h3>
                 Embark on a transformative journey to a healthier, more vibrant you with MyFitness – the ultimate fitness and health tracker. We are thrilled to bring you a comprehensive platform designed to elevate your well-being and make every step of your fitness adventure rewarding.
-              </p>
+              
             </div>
               <img src="assets/muscle.png" alt="">
         </div>
       </div>
 
 
-      <div class="article2">
+      <div class="article1">
         <div class="subarticle">
           <img src="assets/objectif.png" alt="">
-          <div style="width: 40%;"><p>
+          <div>
             <h3><strong> Track Your Progress with Precision:</strong></h3>
             Log your workouts, monitor your nutrition, and set personalized goals that align with your aspirations. MyFitness's intuitive interface empowers you to track and visualize your progress effortlessly.
-            </p>
           </div>
         </div>
       </div>
 
 
-      <div class="article3">
+      <div class="article1">
         <div class="subarticle">
-          <div style="width: 40%;">
-            <p><h3><strong>Nutrition Made Simple:</strong></h3>
+          <div>
+            <h3><strong>Nutrition Made Simple:</strong></h3>
               Elevate your nutrition game with our easy-to-use food log. Gain insights into your daily caloric intake, macronutrients, and make informed choices that fuel your fitness journey.
-            </p>
           </div>
           <img src="assets/kcal.png" alt="">
         </div>
       </div>
 
-      <div class="article4">
+      <div class="article1">
         <div class="subarticle">
           <img src="assets/medal.png" alt="">
-          <div style="width: 40%;">
-            <p><h3><strong>Visualize Your Achievements:</strong></h3>Witness your achievements come to life on your personalized dashboard. Visualize your fitness journey with interactive charts and graphs that celebrate every milestone.
-            </p>
+          <div>
+            <h3><strong>Visualize Your Achievements:</strong></h3>Witness your achievements come to life on your personalized dashboard. Visualize your fitness journey with interactive charts and graphs that celebrate every milestone.
+            
           </div>
         </div>
       </div>
 
-      <div class="article5">
+      <div class="article1">
         <div class="subarticle">
-          <div style="width: 40%;">
-            <p><h3><strong>Join MyFitness Community:</strong></h3>
+          <div>
+            <h3><strong>Join MyFitness Community:</strong></h3>
               Connect with like-minded individuals on our community forum. Share your experiences, get inspired, and support others on their path to wellness. Together, we build a community that thrives on encouragement and empowerment.
-            </p>
           </div>
           <img src="assets/grouper.png" alt="">
         </div>
@@ -154,5 +168,6 @@
       <div>Copyrights @ MyFitness</div>
       </div>
   </footer>
+  <script src="sidebar.js"></script>
 </body>
 </html>
